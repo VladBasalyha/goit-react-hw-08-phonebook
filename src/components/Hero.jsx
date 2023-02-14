@@ -16,15 +16,10 @@ export default function Hero() {
           fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
         >
-          Contact book{' '}
-          <Text as={'span'} color={'blue.400'}>
-            made easy
-          </Text>
+          Contact book
         </Heading>
         <Text color={'gray.500'} maxW={'3xl'}>
-          Using the contact book has never been so easy. You can add contacts,
-          see contacts and even delete them. With this app, you’ll be the god of
-          the contact book.
+          Contacts book App. Save your contacts here.
         </Text>
         <HeroSignButtons />
       </Stack>

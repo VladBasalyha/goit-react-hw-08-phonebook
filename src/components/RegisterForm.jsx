@@ -1,4 +1,3 @@
-import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { Box, Flex, Heading, Link, Stack, Text } from '@chakra-ui/layout';
 import {
   Button,
@@ -9,11 +8,9 @@ import {
   InputRightElement,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export const RegisterForm = ({ handleSignUp }) => {
-  const [showPassword, setShowPassword] = useState(false);
   const bgColor = useColorModeValue('gray.200', 'gray.700');
 
   return (
@@ -24,7 +21,7 @@ export const RegisterForm = ({ handleSignUp }) => {
             Sign up to your account
           </Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
-            to enjoy our cool APP ✌️
+            Phonebook App
           </Text>
         </Stack>
         <Box
@@ -46,22 +43,8 @@ export const RegisterForm = ({ handleSignUp }) => {
             <FormControl id="password" isRequired>
               <FormLabel>Password</FormLabel>
               <InputGroup>
-                <Input
-                  size="md"
-                  type={showPassword ? 'text' : 'password'}
-                  name="password"
-                  pattern="(?=.*\d).{7,}"
-                />
-                <InputRightElement h={'full'}>
-                  <Button
-                    variant={'ghost'}
-                    onClick={() =>
-                      setShowPassword(showPassword => !showPassword)
-                    }
-                  >
-                    {showPassword ? <ViewIcon /> : <ViewOffIcon />}
-                  </Button>
-                </InputRightElement>
+                <Input size="md" name="password" pattern="(?=.*\d).{7,}" />
+                <InputRightElement h={'full'}></InputRightElement>
               </InputGroup>
             </FormControl>
             <Stack pt={2}>

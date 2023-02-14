@@ -13,12 +13,9 @@ import {
   Flex,
   Link,
 } from '@chakra-ui/react';
-import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
-import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export const LoginForm = ({ handleLogin }) => {
-  const [showPassword, setShowPassword] = useState(false);
   const bgColor = useColorModeValue('gray.200', 'gray.700');
 
   return (
@@ -30,7 +27,7 @@ export const LoginForm = ({ handleLogin }) => {
         </Stack>
         <Box
           rounded={'lg'}
-          bg={useColorModeValue('light', 'gray.300')}
+          bg={useColorModeValue('light', 'gray.100')}
           boxShadow={'lg'}
           p={8}
         >
@@ -47,16 +44,7 @@ export const LoginForm = ({ handleLogin }) => {
                   name="password"
                   pattern="(?=.*\d).{7,}"
                 />
-                <InputRightElement h={'full'}>
-                  <Button
-                    variant={'ghost'}
-                    onClick={() =>
-                      setShowPassword(showPassword => !showPassword)
-                    }
-                  >
-                    {showPassword ? <ViewIcon /> : <ViewOffIcon />}
-                  </Button>
-                </InputRightElement>
+                <InputRightElement h={'full'}></InputRightElement>
               </InputGroup>
             </FormControl>
             <Stack spacing={2}>

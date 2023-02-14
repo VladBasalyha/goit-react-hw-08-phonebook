@@ -3,7 +3,6 @@ import { Toaster } from 'react-hot-toast';
 import { AppBar } from './AppBar';
 import { Suspense } from 'react';
 import { Box, Divider } from '@chakra-ui/layout';
-import Footer from './Footer';
 import { useColorModeValue } from '@chakra-ui/react';
 
 export const Layout = () => {
@@ -19,7 +18,6 @@ export const Layout = () => {
         </Suspense>
       </Box>
       <Divider />
-      <Footer />
       <Toaster position="top-right" reverseOrder={false} />
     </>
   );

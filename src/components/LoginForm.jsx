@@ -30,7 +30,7 @@ export const LoginForm = ({ handleLogin }) => {
         </Stack>
         <Box
           rounded={'lg'}
-          bg={useColorModeValue('white', 'gray.700')}
+          bg={useColorModeValue('light', 'gray.300')}
           boxShadow={'lg'}
           p={8}
         >

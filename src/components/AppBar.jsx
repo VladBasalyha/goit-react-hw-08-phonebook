@@ -4,7 +4,6 @@ import { AuthNav } from './AuthNav';
 
 import { useAuth } from 'hooks/hooks';
 
-import { SwitchColorModeBTN } from 'components/Buttons';
 import { Box, Container, Flex } from '@chakra-ui/layout';
 
 export const AppBar = () => {

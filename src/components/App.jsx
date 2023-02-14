@@ -3,6 +3,7 @@ import { lazy } from 'react';
 import { Layout } from './Layout';
 import { PrivateRoute } from './routes/PrivateRoute';
 import { RestrictedRoute } from './routes/RestrictedRoute';
+import React from 'react';
 
 const LoginPage = lazy(() => import('pages/Login'));
 const RegisterPage = lazy(() => import('pages/Register'));

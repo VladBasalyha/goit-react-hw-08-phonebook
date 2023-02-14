@@ -41,7 +41,6 @@ export const Form = () => {
         position: 'top-center',
       })
     );
-
     form.reset();
   };
 

@@ -43,7 +43,7 @@ export const RegisterForm = ({ handleSignUp }) => {
             <FormControl id="password" isRequired>
               <FormLabel>Password</FormLabel>
               <InputGroup>
-                <Input size="md" name="password" pattern="(?=.*\d).{7,}" />
+                <Input size="md" name="password" />
                 <InputRightElement h={'full'}></InputRightElement>
               </InputGroup>
             </FormControl>

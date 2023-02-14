@@ -42,7 +42,7 @@ export const LoginForm = ({ handleLogin }) => {
                 <Input
                   type={'password'}
                   name="password"
-                  pattern="(?=.*\d).{7,}"
+                  // pattern="(?=.*\d).{7,}"
                 />
                 <InputRightElement h={'full'}></InputRightElement>
               </InputGroup>
